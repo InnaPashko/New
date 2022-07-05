@@ -3,14 +3,17 @@
 
 <head>
   <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"/>
-    <title>business</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/main.min.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <title>business</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/main.min.css">
 
 </head>
 
@@ -42,11 +45,11 @@
       </header> -->
   <main>
     <section class="hero">
-          <div class="container">
+      <div class="container">
         <h1 class="hero__text">Эффективные решения для вашего бизнеса</h1>
-        <button  type="button" class="hero__btn" data-modal-open>Заказать услугу</button>
-          </div>
-      </section>
+        <button type="button" class="hero__btn" data-modal-open>Заказать услугу</button>
+      </div>
+    </section>
     <section class="specifics">
       <div class="container">
         <h2 class="specifics__text">Особенности нашего бизнеса</h2>
@@ -132,7 +135,24 @@
         <h2 class="team__text">Наша команда</h2>
         <ul class="team__list">
           <li class="team__item">
-            <img src="./images/img-1-min.jpg" alt="Дизайнер" width="270" height="260" />
+            <picture>
+              <source srcset="images\img-1-ds-1-min.jpg 1x
+              images\img-1-ds-2-min.jpg 2x"
+              media="(min-width: 1200px)" />
+
+              <source srcset="images\img-1-tab-1-min.jpg 1x
+              images\img-1-tab-2-min.jpg 2x"
+              media="(min-width: 768px)" />
+
+              <source srcset="images\img-1-mob-1-min.jpg 1x
+              images\img-1-mob-2-min.jpg 2x"
+              media="(min-width: 1200px)" />
+              <img 
+            src="./images/img-1-min.jpg" 
+            alt="Дизайнер" width="270" 
+            height="260" />
+            </picture>
+            
             <div class="employees">
               <h3 class="employees__name">Игорь Демьяненко</h3>
               <p lang="en" class="employees__prof">Product Designer</p>
@@ -173,7 +193,23 @@
             </div>
           </li>
           <li class="team__item">
-            <img src="./images/img-2-min.jpg" alt="Front-end розробник" width="270" height="260" />
+            <picture>
+              <source srcset="images\img-2-ds-1-min.jpg 1x
+              images\img-2-ds-2-min.jpg 2x"
+              media="(min-width: 1200px)" />
+
+              <source srcset="images\img-2-tab-1-min.jpg 1x
+              images\img-2-tab-2-min.jpg 2x"
+              media="(min-width: 768px)" />
+
+              <source srcset="images\img-2-mob-1-min.jpg 1x
+              images\img-2-mob-2-min.jpg 2x"
+              media="(min-width: 1200px)" />
+              <img 
+            src="./images/img-2-min.jpg" 
+            alt="Дизайнер" width="270" 
+            height="260" />
+            </picture>
             <div class="employees">
               <h3 class="employees__name">Ольга Репина</h3>
               <p lang="en" class="employees__prof">Frontend Developer</p>
@@ -214,7 +250,24 @@
             </div>
           </li>
           <li class="team__item">
-            <img src="./images/img-3-min.jpg" alt="Маркетинг" width="270" height="260" />
+            <picture>
+              <source srcset="images\img-3-ds-1-min.jpg 1x
+              images\img-3-ds-2-min.jpg 2x"
+              media="(min-width: 1200px)" />
+
+              <source srcset="images\img-3-tab-1-min.jpg 1x
+              images\img-3-tab-2-min.jpg 2x"
+              media="(min-width: 768px)" />
+
+              <source srcset="images\img-3-mob-1-min.jpg 1x
+              images\img-3-mob-2-min.jpg 2x"
+              media="(min-width: 1200px)" />
+              <img 
+            src="./images/img-3-min.jpg" 
+            alt="Дизайнер" width="270" 
+            height="260" />
+            </picture>
+            
             <div class="employees">
               <h3 class="employees__name">Николай Тарасов</h3>
               <p lang="en" class="employees__prof">Marketing</p>
@@ -255,7 +308,23 @@
             </div>
           </li>
           <li class="team__item">
-            <img src="./images/img-4-min.jpg" alt="UI дизайнер" width="270" height="260" />
+            <picture>
+              <source srcset="images\img-4-ds-1-min.jpg 1x
+              images\img-4-ds-2-min.jpg 2x"
+              media="(min-width: 1200px)" />
+
+              <source srcset="images\img-4-tab-1-min.jpg 1x
+              images\img-4-tab-2-min.jpg 2x"
+              media="(min-width: 768px)" />
+
+              <source srcset="images\img-4-mob-1-min.jpg 1x
+              images\img-4-mob-2-min.jpg 2x"
+              media="(min-width: 1200px)" />
+              <img 
+            src="./images/img-4-min.jpg" 
+            alt="Дизайнер" width="270" 
+            height="260" />
+            </picture>
             <div class="employees">
               <h3 class="employees__name">Михаил Ермаков</h3>
               <p lang="en" class="employees__prof">UI Designer</p>
