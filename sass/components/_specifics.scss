@@ -1,5 +1,8 @@
 .specifics {
-    padding-top: 94px;
+    padding-top: 60px;
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+    }
 
     &__list {
         display: flex;
@@ -8,7 +11,6 @@
     }
 
     &__svg {
-        /* display: block; */
         align-items: center;
         background: #F5F4FA;
         border-radius: 4px;
@@ -22,16 +24,18 @@
     }
 
     &__icon {
-        background-position: 50% 50%;
+        background-position: center;
     }
 
     &__text {
+        display: flex;
         display: none;
         font-weight: 700;
         font-size: 14px;
         line-height: 1.14;
         text-transform: uppercase;
         color: #212121;
+        width: 100%;
     }
 
     &__link {
@@ -47,28 +51,29 @@
         @media screen and (min-width: 1200px) {
             /* width: 25%; */
             flex-basis: calc((100% - 3 * 30px) / 4);
-        }}
+        }
+    }
 
 
 
-        /* &__link:last-child {
+    /* &__link:last-child {
             margin-right: 0;
         } */
 
-        &__title {
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 1.14;
-            text-transform: uppercase;
-            color: #212121;
-            margin-bottom: 10px;
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+        color: #212121;
+        margin-bottom: 10px;
 
-        }
-
-        &__par {
-            font-size: 14px;
-            line-height: 1.71;
-            color: #757575;
-            margin-top: 0px;
-        }
     }
+
+    &__par {
+        font-size: 14px;
+        line-height: 1.71;
+        color: #757575;
+        margin-top: 0px;
+    }
+}

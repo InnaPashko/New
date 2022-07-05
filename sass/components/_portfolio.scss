@@ -24,7 +24,7 @@
         color: var(--logo-color);  
     }
     
-    .&-button-item {
+    &-button-item {
     margin-right: 8px;
     }
     &-item:last-child {
@@ -114,7 +114,7 @@
     background: #2196F3;
     }
     
-    *-text {
+    &-text {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
