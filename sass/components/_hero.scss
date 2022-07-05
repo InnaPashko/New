@@ -1,0 +1,50 @@
+.hero {
+    background-color: #2F303A;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)), 
+    url(../images/Heder.jpg);
+    background-repeat: no-repeat;
+    max-width:  1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center;
+    background-size: cover;
+    .hero__text {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 30px;
+        width: 696px;
+        margin-left: auto;
+        margin-right: auto;
+        
+        }
+        
+        &__btn {
+        display: inline-block;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        font-family: inherit;
+        letter-spacing: 0.06em;
+        color: #FFFFFF;
+        background: #2196F3;
+        border-radius: 4px;
+        padding: 10px 32px;
+        text-align: center;
+        border: 1px solid transparent;
+        display: block;
+        margin: auto;
+        }
+    }
+    
+    
+    
+    
