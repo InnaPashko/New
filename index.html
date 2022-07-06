@@ -18,15 +18,17 @@
 </head>
 
 <body>
-  <!-- <header class="header">
+  <header class="header">
       <div class="container main-nav">
         <nav class="nav">
+          
         <a class="nav__logo link" href="./index.html">Web<span class="header-color">Studio</span> </a>
         <ul class="nav__list">
           <li class="nav__item"><a href="./stydia.html" class="nav__link current" style="color: #2196F3;" >Студия</a></li>
           <li class="nav__item"><a href="./portfolio.html" class="nav__link">Портфолио</a></li>
           <li class="nav__item"><a href="./contact.html" class="nav__link">Контакты</a></li>
         </ul>
+        
       </nav>
       <ul class="contact">
           <li class="contact__item">
@@ -41,8 +43,39 @@
           </use>
           </svg>+38 096 111 11 11</a></li>
       </ul>
+      <button type="button" class="menu-button is-open" 
+        aria-expanded="false"
+        aria-controls="menu-container"
+        data-menu-button>
+          <svg width="40px" height="40px"
+          aria-label="Перемикач мобыльного меню">
+            <use class="icon-cross" href="./images/icons.svg#cross"></use>
+            <use class="icon-menu" href="./images/icons.svg#menu"></use>
+          </svg>
+        </button>
+        <div class="menu-container" id="menu-container" data-menu>
+          <div class="mob-menu"><ul class="menu-container-nav__list">
+            <li class="menu-container-nav__item"><a href="./stydia.html" class="menu-container-nav__link current" style="color: #2196F3;" >Студия</a></li>
+            <li class="menu-container-nav__item"><a href="./portfolio.html" class="menu-container-nav__link">Портфолио</a></li>
+            <li class="menu-container-nav__item"><a href="./contact.html" class="menu-container-nav__link">Контакты</a></li>
+          </ul>
+          <ul class="menu-container__list-contact">
+            <li class="menu-container-contact__item">
+            <a href="mail:info@devstudio.com" class="menu-container-contact__link"><svg class="menu-container-contact__icon" width="16" height="12">
+              <use href="./images/icons.svg#envelope">
+            </use>
+            </svg>info@devstudio.com</a></li>
+          
+          <li class="menu-container-contact__item">
+              <a href="tek:+380961111111" class="menu-container-contact__link"><svg class="menu-container-contact__icon" width="10" height="16">
+              <use href="./images/icons.svg#smartphone" >
+            </use>
+            </svg>+38 096 111 11 11</a></li>
+        </ul>
         </div>
-      </header> -->
+        </div>
+        </div>
+      </header>
   <main>
     <section class="hero">
       <div class="container">
@@ -105,7 +138,7 @@
         </ul>
       </div>
     </section>
-    <!-- <section class="about">
+    <section class="about">
       <div class="container">
         <h2 class="about__text">Чем мы занимаемся</h2>
         <ul class="about__list">
@@ -129,7 +162,7 @@
           </li>
         </ul>
       </div>
-    </section> -->
+    </section>
     <section class="team">
       <div class="container">
         <h2 class="team__text">Наша команда</h2>
@@ -146,7 +179,7 @@
 
               <source srcset="images\img-1-mob-1-min.jpg 1x
               images\img-1-mob-2-min.jpg 2x"
-              media="(min-width: 1200px)" />
+              media="(min-width: 480px)" />
               <img 
             src="./images/img-1-min.jpg" 
             alt="Дизайнер" width="270" 
@@ -204,7 +237,7 @@
 
               <source srcset="images\img-2-mob-1-min.jpg 1x
               images\img-2-mob-2-min.jpg 2x"
-              media="(min-width: 1200px)" />
+              media="(min-width: 480px)" />
               <img 
             src="./images/img-2-min.jpg" 
             alt="Дизайнер" width="270" 
@@ -261,7 +294,7 @@
 
               <source srcset="images\img-3-mob-1-min.jpg 1x
               images\img-3-mob-2-min.jpg 2x"
-              media="(min-width: 1200px)" />
+              media="(min-width: 480px)" />
               <img 
             src="./images/img-3-min.jpg" 
             alt="Дизайнер" width="270" 
@@ -319,7 +352,7 @@
 
               <source srcset="images\img-4-mob-1-min.jpg 1x
               images\img-4-mob-2-min.jpg 2x"
-              media="(min-width: 1200px)" />
+              media="(min-width: 480px)" />
               <img 
             src="./images/img-4-min.jpg" 
             alt="Дизайнер" width="270" 
@@ -367,12 +400,12 @@
         </ul>
       </div>
     </section>
-    <!-- <section class="clients">
+    <section class="clients">
       <div class="container">
         <h2 class="clients-text">Постоянные клиенты</h2>
         <ul class="clients-list">
           <li class="clients-item">
-            <a href="" class="client-link">
+            <a href="" class="clients-link">
               <svg class="clients-icon" width="106px" height="60px">
                 <use href="./images/icons.svg#logo"></use>
               </svg></a>
@@ -396,7 +429,7 @@
               </svg></a>
           </li>
           <li class="clients-item">
-            <a href="" class="client-link">
+            <a href="" class="clients-link">
               <svg class="clients-icon" width="106px" height="60px">
                 <use href="./images/icons.svg#logo4"></use>
               </svg></a>
@@ -409,7 +442,7 @@
           </li>
         </ul>
       </div>
-    </section> -->
+    </section>
   </main>
   <!-- <footer class="footer">
     <div class="container">

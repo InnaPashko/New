@@ -1,11 +1,13 @@
 .header {
     border-bottom: 1px solid #E5E5E5;
+    position: relative;
     }
     
     
-    .main-nav {
+    .header .main-nav {
     display: flex;
     align-items: center;
+    position: relative;
     }
     
     .header-color {
@@ -72,14 +74,43 @@
                 margin-right: 0;
             }
         }
+    .nav__list {display: none;}
     
-    
+    .menu-button{
+        display: block;
+        margin-left: auto;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+    }
+
+    .menu-button .icon-cross {
+        display: none;
+    }
+    .menu-button.is-open .icon-cross {
+        display: block;
+    }
+    .menu-button.is-open .icon-menu {
+        display: none;
+    }
+    .menu-container{
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 796px;
+        height: 480px;
+        &is-open{
+            display: block;
+        }
+    }
     .contact {
-    display: flex;
+     /* display: flex; */
     margin-left: auto;
     align-items: center;
     justify-content: center;
     fill: #757575;
+display: none;
     
     &__item {
         align-items: center;

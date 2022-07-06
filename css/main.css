@@ -329,6 +329,11 @@ body {
   padding-bottom: 94px;
   padding-top: 94px;
 }
+@media screen and (max-width: 1199px) {
+  .about {
+    display: none;
+  }
+}
 .about__text {
   font-weight: 700;
   font-size: 36px;
@@ -486,7 +491,7 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.clients__text {
+.clients-text {
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
@@ -494,23 +499,21 @@ body {
   letter-spacing: 0.03em;
   color: #212121;
 }
-.clients__list {
+.clients-list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  /* margin-top: 50px;
+  margin-top: 50px;
   justify-content: center;
-  align-items: center; */
+  align-items: center;
 }
-.clients__item {
+.clients-item {
   margin-left: 30px;
   width: 170px;
   height: 92px;
 }
-.clients__item:first-child {
+.clients-item:first-child {
   margin-left: 0;
 }
-.clients__link {
+.clients-link {
   width: 100%;
   height: 100%;
   display: flex;
@@ -522,13 +525,13 @@ body {
   align-items: center;
   fill: #AFB1B8;
 }
-.clients__icon {
+.clients-icon {
   fill: #AFB1B8;
 }
-.clients__link:hover .clients-icon, .clients__link:focus .clients-icon {
+.clients-link:hover .clients-icon, .clients-link:focus .clients-icon {
   fill: #2196F3;
 }
-.clients__link:hover, .clients__link:focus {
+.clients-link:hover, .clients-link:focus {
   border-color: #2196F3;
 }
 
@@ -915,18 +918,28 @@ body {
   padding-bottom: 94px;
 }
 .writings-list {
-  width: calc((100% - 60px) / 3);
-  margin-right: 30px;
-  margin-bottom: 30px;
+  width: 100%;
 }
-.writings-list:hover .writings-top-text {
+@media screen and (min-width: 768px) {
+  .writings-list {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .writings-list {
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+}
+.writings-list-list:hover .writings-list-top-text {
   transform: translateY(0);
 }
-.writings-top-wrap {
+.writings-list-top-wrap {
   position: relative;
   overflow: hidden;
 }
-.writings-top-text {
+.writings-list-top-text {
   position: absolute;
   top: 0;
   color: #FFFFFF;
@@ -937,16 +950,16 @@ body {
   transform: translateY(100%);
   transition: transform 300ms linear;
 }
-.writings-list:hover, .writings-list:focus {
+.writings-list-list:hover, .writings-list-list:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.writings-list:nth-child(3n+3) {
+.writings-list-list:nth-child(3n+3) {
   margin-right: 0;
 }
-.writings-list:nth-child(n+7) {
+.writings-list-list:nth-child(n+7) {
   margin-bottom: 0;
 }
-.writings-list-text {
+.writings-list-list-text {
   padding-left: 24px;
   padding-top: 20px;
   padding-right: 24px;
